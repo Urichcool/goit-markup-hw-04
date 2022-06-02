@@ -246,8 +246,21 @@ p {
   justify-content: space-between;
 }
 
-.features-list-item + .features-list-item {
+.features-list-item{
   min-width: 270px;
+}
+
+.features-list-item::before{
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secondary-white-color);
+  margin-bottom: 30px;
+
+
+}
+
+.features-list-item + .features-list-item {
   margin-left: 30px;
 }
 
@@ -357,6 +370,33 @@ p {
   letter-spacing: 0.03em;
 }
 
+/* clients */
+
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.clients-title{
+  margin-bottom: 50px;
+ font-family: "Roboto";
+  font-style: normal;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em; 
+}
+
+.clients-list{
+  display: flex;
+}
+
+.clients-item{
+  border: 1px solid rgba(175, 177, 184, 1);
+}
+
 /* footer */
 
 .page-footer {
@@ -452,12 +492,14 @@ p {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+  
 }
 
 .examples-button:hover,
 .examples-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .card-set {
@@ -473,6 +515,11 @@ p {
   margin-left: var(--card-set-gap);
 }
 
+.card-set-item:hover,
+.card-set-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-content{
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
@@ -483,6 +530,7 @@ p {
 .card-set-link{
   text-decoration: none;
 }
+
 
 .examples-name {
   color: var(--title-text-color);
