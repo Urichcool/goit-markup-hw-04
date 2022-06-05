@@ -375,6 +375,41 @@ p {
   letter-spacing: 0.03em;
 }
 
+.crew-link-list{
+  display: flex;
+  margin-top: 16px;
+ margin-left: 32px;
+ margin-right: 32px;
+}
+
+.crew-link{
+  display: flex;
+  color: #AFB1B8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.crew-link:hover,
+.crew-link:focus{
+  background-color: var(--accent-color);
+  color: var(--secondary-white-color);
+}
+
+.crew-link + .crew-link{
+  margin-left: 10px;
+}
+
+.crew-icon{
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+
+}
 /* clients */
 
 .clients{
@@ -400,9 +435,6 @@ p {
 }
 
 .clients-item{
-  display: flex;
-border: 1px solid #AFB1B8 ;
-border-radius: 4px;
 width: 170px;
 height: 92px;
 
@@ -415,24 +447,32 @@ height: 92px;
 
 
 .clients-link{
-color: #AFB1B8;
-width: 106px;
-  height: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8 ;
+  border-radius: 4px;
+  color: #AFB1B8;
+  
+
 }
 
 .clients-link:hover,
 .clients-link:focus {
 color: var(--accent-color);
+border-color: var(--accent-color);
 }
 
 .clients-icon{
-  width: 106px;
-  height: 60px;
-  margin: 16px 32px;
   fill:currentColor;
   
 }
 
+.clients-icon:hover,
+.clients-icon:focus{
+  color: var(--accent-color);
+}
 
 /* footer */
 
