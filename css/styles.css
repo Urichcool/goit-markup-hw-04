@@ -152,28 +152,29 @@ p {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .header-contacts-icon{
-width: 16px;
-height: 12px;
+
 margin-right: 10px;
+fill: currentColor;
 }
 
 .header-contacts-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ color: #757575 ;
   
 }
 
 .header-contacts-item + .header-contacts-item {
   margin-left: 50px;
+  
 }
 
 
 
 .header-contacts .header-link {
+  
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Roboto";
@@ -261,17 +262,13 @@ margin-right: 10px;
 
 .features-list-item{
   min-width: 270px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
 .features-list-item + .features-list-item {
   margin-left: 30px;
 }
-
-.features-list-item:nth-child(odd){
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 
 
 .features-title {
@@ -386,13 +383,12 @@ margin-right: 10px;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .crew-link-list{
   display: flex;
-  margin-top: 16px;
- margin-left: 32px;
- margin-right: 32px;
+justify-content: center;
 }
 
 .crew-link{
@@ -542,6 +538,12 @@ border-color: var(--accent-color);
   display: block;
 }
 
+
+.footer-container{
+  display: flex;
+  vertical-align: baseline;
+  
+}
 
 
 .footer-link:hover,
