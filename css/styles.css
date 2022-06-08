@@ -9,6 +9,7 @@
   --secondary-bg-color: #2f303a;
   --secondary-white-color: #f5f4fa;
   --card-set-gap: 30px;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -152,7 +153,7 @@ p {
 .header-contacts {
   display: flex;
   margin-left: auto;
-  justify-content: flex-end;
+  align-items: center;
 }
 
 .header-contacts-icon{
@@ -184,6 +185,7 @@ fill: currentColor;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 .header-contacts .header-link:hover,
@@ -211,6 +213,8 @@ fill: currentColor;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -350,6 +354,9 @@ fill: currentColor;
   margin-left: 30px;
 }
 
+.crew-icon-item + .crew-icon-item{
+ margin-left: 10px;
+}
 
 
 .crew-title {
@@ -393,9 +400,9 @@ justify-content: center;
 
 .crew-link{
   display: flex;
-  color: #AFB1B8;
-  width: 40px;
-  height: 40px;
+  color: var(--icon-color);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -443,12 +450,8 @@ justify-content: center;
   
 }
 
-.clients-item{
-width: 170px;
-height: 92px;
 
 
-}
 
 .clients-item + .clients-item{
   margin-left: 30px;
@@ -456,13 +459,14 @@ height: 92px;
 
 
 .clients-link{
-  height: 100%;
+  width: 170px;
+height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8 ;
+  border: 1px solid var(--icon-color) ;
   border-radius: 4px;
-  color: #AFB1B8;
+  color: var(--icon-color);
   
 
 }
@@ -555,8 +559,6 @@ border-color: var(--accent-color);
 }
 
 .socials-text{
-  display: flex;
-
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -655,8 +657,8 @@ background-image: linear-gradient( to right,
   margin-left: var(--card-set-gap);
 }
 
-.card-set-item:hover,
-.card-set-item:focus{
+.card-set-link:hover,
+.card-set-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -669,6 +671,7 @@ background-image: linear-gradient( to right,
 
 .card-set-link{
   text-decoration: none;
+  display: block;
 }
 
 
